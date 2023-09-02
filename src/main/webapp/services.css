@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #eee;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  margin-right: 1rem;
+}
+
+nav a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #333;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: #333;
+  color: #fff;
+}
+
+.logout {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.hero {
+  background-image: url('https://cdn.pixabay.com/photo/2017/08/06/22/01/books-2596809_640.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 4rem 1rem;
+  color: #fff;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 2rem;
+}
+
+.service-card {
+  width: calc(25% - 1rem);
+  margin-bottom: 2rem;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  text-align: center;
+}
+
+.service-card img {
+  max-width: 100%;
+}
+
+.service-card h3 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.service-card p {
+  margin-top: 0.5rem;
+  line-height: 1.5;
+}

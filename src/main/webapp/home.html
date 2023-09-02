@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Attendance Tracker System</title>
+  <style>
+  body {
+     min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-image: url('https://cdn.pixabay.com/photo/2016/10/10/03/25/school-design-1727586_960_720.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    /* Style for header */
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+      font-weight: bold;
+      text-align: center;
+      text-shadow: 1px 1px #444;
+    }
+    
+    /* Style for cards */
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 50px;
+    }
+    .card {
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  width: 200px;
+  height:200px;
+  margin: auto;
+
+  text-align: center;
+  
+  font-family: arial;
+  background-color: #f5f5f5;
+  padding: 20px;
+  opacity: 0.8; /* Set the opacity to 0.8 */
+}
+    
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card a {
+      display: block;
+      margin-top: 30px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      text-decoration: none;
+      transition: color 0.2s ease-in-out;
+    }
+    .card a:hover {
+      color: #008CBA;
+    }
+    .card:nth-child(1) {
+      background-image: url('https://images.unsplash.com/photo-1528701960690-75d86714dae8');
+      background-size: cover;
+      background-position: center;
+    }
+    .card:nth-child(2) {
+      background-image: url('https://images.unsplash.com/photo-1533227268428-f5a0c690f18b');
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* Style for footer */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      flex-shrink: 0;
+    }
+    .logout{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #btn{
+        border: none;
+        height: 30px;
+        width: 100px;
+        border-radius: 15px;
+        background-color: #008CBA;
+        color: white;
+        font-size: medium;
+        font-weight: 500;
+        margin-right: -80%;
+    }
+
+    #llink{
+        color: #fff;
+        text-decoration: none;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logout">
+        <h1>Attendance Tracker System</h1>
+        <button id="btn"><a id="llink" href="logout" id="button">Logout</a></button>
+        
+  	</div>
+  </header>
+  
+  <div class="container">
+    <div class="card">
+      <a href="add.html">Add Student Details</a>
+    </div>
+    <div class="card">
+      <a href="getdetails">Get Attendance Details</a>
+    </div>
+    <div class="card">
+      <a href="update.html">Update Student</a>
+    </div>
+    <div class="card">
+      <a href="delete.html">Delete Student</a>
+    </div>
+  </div>
+ 
+  <footer>
+    &copy; 2023 Attendance Tracker System
+  </footer>
+</body>
+</html>

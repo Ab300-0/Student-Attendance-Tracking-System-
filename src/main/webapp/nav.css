@@ -1,0 +1,128 @@
+* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			line-height: 1.5;
+			background-image: url('https://cdn.pixabay.com/photo/2017/12/22/08/01/book-3033196_640.jpg');
+			
+			display:flex;
+			flex-direction: column;
+			min-height: 100vh;
+		}
+
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		nav ul {
+			list-style: none;
+			display: flex;
+		}
+
+		nav ul li {
+			margin-left: 20px;
+		}
+
+		nav ul li a {
+			color: #fff;
+			text-decoration: none;
+		}
+
+		nav ul li a:hover {
+			border-bottom: 2px solid #fff;
+		}
+
+		main {
+			padding: 40px;
+			flex: 1;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: space-around;
+		}
+
+		.card {
+			background-color: #fff;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			padding: 20px;
+			margin: 20px;
+			width: 300px;
+			height: 300px;
+		}
+
+		.card h2 {
+			margin-top: 0;
+		}
+
+		.card p {
+			margin: 10px 0;
+		}
+
+		a {
+			text-decoration: none;
+			color: inherit;
+		}
+
+		.card button {
+			background-color: #4CAF50;
+			border: none;
+			color: #fff;
+			padding: 10px 20px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin-top: 20px;
+			cursor: pointer;
+		}
+
+		.card button:hover {
+			background-color: #3e8e41;
+		}
+
+		.card:nth-child(1) {
+			background-color: #f3d7a3b5;
+		}
+
+		.card:nth-child(2) {
+			background-color: #f5bca9bd;
+		}
+
+		.card:nth-child(3) {
+			background-color: #bfe6d7bb;
+		}
+
+		.card:nth-child(4) {
+			background-color: #b7b5e4c7;
+		}
+
+		@media only screen and (max-width: 768px) {
+			header {
+				flex-direction: column;
+				align-items: center;
+				text-align: center;
+			}
+
+			nav ul {
+				margin-top: 20px;
+			}
+
+			main {
+				padding: 20px;
+			}
+
+			.card {
+				width: 100%;
+			}
+		}

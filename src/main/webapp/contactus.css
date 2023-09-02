@@ -1,0 +1,81 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	background-image: url('https://cdn.pixabay.com/photo/2017/03/02/14/30/hand-2111445_960_720.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+}
+
+nav ul li {
+	margin-left: 20px;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+main {
+	padding: 40px;
+}
+
+.contact h2 {
+	margin-bottom: 20px;
+}
+
+.contact form {
+	display: flex;
+	flex-direction: column;
+	max-width: 500px;
+	margin: auto;
+}
+
+.contact label {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.contact input, .contact textarea {
+	padding: 10px;
+	margin-bottom: 20px;
+	border: none;
+	border-radius: 5px;
+}
+
+.contact input[type="submit"] {
+	background-color: #333;
+	color: #fff;
+	cursor: pointer;
+}
+
+.contact input[type="submit"]:hover {
+	background-color: #666;
+}
+
+footer {
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 20px;
+}

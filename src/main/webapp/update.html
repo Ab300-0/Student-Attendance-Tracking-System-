@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Details Update</title>
+  <style>
+  body {
+      background-image: url('https://cdn.pixabay.com/photo/2016/03/26/13/12/pencils-1280558_960_720.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      height:97vh;
+    }
+    /* Style for form */
+    
+
+    /* Style for form labels */
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    /* Style for form inputs */
+    input[type="text"] {
+      display: block;
+      width: 100%;
+      padding: 7px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+
+    /* Style for form submit button */
+    input[type="submit"], a {
+  display: inline-block;
+  background-color: #008CBA;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a {
+  margin-left: 140px;
+}
+
+    /* Style for form submit button on hover */
+    input[type="submit"]:hover {
+      background-color: #005f73;
+    }
+    .form-header h2 {
+      margin: 0;
+      font-size: 24px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      padding: 10px 20px;
+      background-color: #008CBA;
+      color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .form-container {
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #f5f5f5;
+      opacity: 1.9;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+<div class="form-container">
+<div class="form-header">
+      <h2>Update Student Details</h2><br>
+    </div>
+  <form action="updatedetails">
+  	<label> Student Id</label>
+    <input type="text" name="studentId"required>
+    <label> Student Name</label>
+    <input type="text" name="studentName"required>
+    <label>Class</label>
+    <input type="text" name="c">
+    <label>Roll NO</label>
+    <input type="text" name="batchCode"required>
+    <label>Total Classes</label>
+    <input type="text" name="totalClass"required>
+    <label>Attended Classes</label>
+    <input type="text" name="attendedClass"required>
+    <input type="submit" value="Update Details">
+    <a href="nav.html">Cancel</a>
+  </form>
+  </div>
+</body>
+</html>
